@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url('bg.jpeg'); 
+    background-size: cover; */
+    overflow: hidden;   /* so that taskbar does not flow upwards on scrolling */
+    height: 20vh;
+}
+.one{
+    height: 24px;
+    width: 28px;
+    margin-right: 12px;
+    margin-top: 1px;
+    font-size: 0%;;
+}
+.two{
+    height: 26px;
+    width: 32px;
+    margin-right: 12px;
+}
+.three{
+    height: 24px;
+    width: 32px;
+    margin-right: 6px;
+}
+.four{
+    height: 24px;
+    width: 44px;
+    margin-right: 6px;
+}
+.five{
+    height: 24px;
+    width: 32px;
+    margin-right: 12px;
+}
+
+/* to hide text */
+.icon-text {
+    visibility: hidden;
+    position: absolute;
+    bottom: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .taskbar img:hover + .icon-text {
+    visibility: visible;
+  }
+  
+
+
+.right{
+    width: 280px;
+}
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+
+.startmenu{
+    position: fixed; 
+    /* bottom: 50px; */
+    bottom: -900px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in; 
+}
+
+.startmenu img{
+    border-radius: 8px;
+    height: 640px;
+    width: 600px;
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}  
+.icons{
+    color: white;
+}
